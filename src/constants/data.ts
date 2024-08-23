@@ -4,20 +4,44 @@ export const navItems: NavItem[] = [
   {
     title: 'Dashboard',
     href: '/',
-    icon: 'dashboard',
+    icon: 'barChart2',
     label: 'Dashboard'
   },
   {
-    title: 'Students',
-    href: '/student',
-    icon: 'user',
-    label: 'Student'
+    title: 'Overview',
+    href: '/overview',
+    icon: 'barChart2',
+    label: 'Overview'
   },
   {
-    title: 'Login',
-    href: '/login',
-    icon: 'login',
-    label: 'Login'
+    title: 'Brands',
+    href: '/brands',
+    icon: 'shoppingBag',
+    label: 'Brands'
+  },
+  {
+    title: 'Calender',
+    href: '/calender',
+    icon: 'calendarDays',
+    label: 'Calender'
+  },
+  {
+    title: 'Talents',
+    href: '/talents',
+    icon: 'users',
+    label: 'Talent'
+  },
+  {
+    title: 'Drafts',
+    href: '/drafts',
+    icon: 'fileSignatureIcon',
+    label: 'Drafts'
+  },
+  {
+    title: 'Messages',
+    href: '/messages',
+    icon: 'messagesSquare',
+    label: 'Messages'
   }
 ];
 

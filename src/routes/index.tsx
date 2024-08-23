@@ -1,3 +1,4 @@
+import BrandsPage from '@/pages/brands/brands';
 import FormPage from '@/pages/form';
 import NotFound from '@/pages/not-found';
 import { Suspense, lazy } from 'react';
@@ -30,6 +31,10 @@ export default function AppRouter() {
         {
           element: <DashboardPage />,
           index: true
+        },
+        {
+          path: 'brands',
+          element: <BrandsPage />
         },
         {
           path: 'student',

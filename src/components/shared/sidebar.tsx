@@ -3,7 +3,7 @@ import DashboardNav from '@/components/shared/dashboard-nav';
 import { navItems } from '@/constants/data';
 import { useSidebar } from '@/hooks/use-sidebar';
 import { cn } from '@/lib/utils';
-import { ChevronsLeft } from 'lucide-react';
+import { ChevronsLeft, Maximize2, Minimize2 } from 'lucide-react';
 import { useState } from 'react';
 
 type SidebarProps = {
@@ -22,26 +22,32 @@ export default function Sidebar({ className }: SidebarProps) {
   return (
     <nav
       className={cn(
-        `relative z-10 hidden h-screen flex-none  px-3 md:block`,
+        `relative z-10 hidden h-screen flex-none bg-black px-3 md:block`,
         status && 'duration-500',
-        !isMinimized ? 'w-72' : 'w-[80px]',
+        !isMinimized ? 'w-64' : 'w-[80px]',
         className
       )}
     >
       <div
         className={cn(
-          'flex items-center px-0 py-5 md:px-2',
+          'flex items-center px-0 py-5 text-white md:px-2',
           isMinimized ? 'justify-center ' : 'justify-between'
         )}
       >
-        {!isMinimized && <h1 className="text-2xl font-bold">Logo</h1>}
-        <ChevronsLeft
-          className={cn(
-            'size-8 cursor-pointer rounded-full border bg-background text-foreground',
-            isMinimized && 'rotate-180'
-          )}
-          onClick={handleToggle}
-        />
+        <h1 className={`font-bold ${isMinimized ? 'text-lg' : 'text-2xl'}`}>
+          DIA
+        </h1>
+        {isMinimized ? (
+          <Maximize2
+            className={cn('cursor-pointer text-sm')}
+            onClick={handleToggle}
+          />
+        ) : (
+          <Minimize2
+            className={cn('cursor-pointer text-sm')}
+            onClick={handleToggle}
+          />
+        )}
       </div>
       <div className="space-y-4 py-4">
         <div className="px-2 py-2">

@@ -1,6 +1,8 @@
 import {
   AlertTriangle,
   ArrowRight,
+  BarChart2,
+  CalendarDays,
   Check,
   ChevronLeft,
   ChevronRight,
@@ -8,6 +10,7 @@ import {
   Command,
   CreditCard,
   File,
+  FileSignature,
   FileText,
   HelpCircle,
   Image,
@@ -17,17 +20,20 @@ import {
   LogIn,
   LucideIcon,
   LucideProps,
+  MessagesSquare,
   Moon,
   MoreVertical,
   Pizza,
   Plus,
   Settings,
+  ShoppingBag,
   SunMedium,
   Trash,
   Twitter,
   User,
   User2Icon,
   UserX2Icon,
+  Users,
   X
 } from 'lucide-react';
 
@@ -60,6 +66,13 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   laptop: Laptop,
+  barChart2: BarChart2,
+  shoppingBag: ShoppingBag,
+  calendarDays: CalendarDays,
+  users: Users,
+  fileSignatureIcon: FileSignature,
+  messagesSquare: MessagesSquare,
+  x: X,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"
