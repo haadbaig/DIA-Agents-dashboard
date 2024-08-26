@@ -3,7 +3,7 @@ import DashboardNav from '@/components/shared/dashboard-nav';
 import { navItems } from '@/constants/data';
 import { useSidebar } from '@/hooks/use-sidebar';
 import { cn } from '@/lib/utils';
-import { ChevronsLeft, Maximize2, Minimize2 } from 'lucide-react';
+import { Maximize2, Minimize2 } from 'lucide-react';
 import { useState } from 'react';
 
 type SidebarProps = {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const DataTable = ({ dataSource, paginated = true, headers }) => {
   const [currentPage, setCurrentPage] = useState(1);

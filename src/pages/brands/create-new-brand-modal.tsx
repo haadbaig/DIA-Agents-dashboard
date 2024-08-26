@@ -1,18 +1,13 @@
 import { Input } from '@/components/ui/input';
 import { Modal } from '@/components/ui/modal';
 import { Button } from '@/components/ui/button';
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
-import { Ellipsis, Plus, X } from 'lucide-react';
+import { Dispatch, SetStateAction, useState } from 'react';
+import { Ellipsis, X } from 'lucide-react';
 import PlusButton from '@/components/shared/plus-button';
 
 interface CreateNewBrandProfileProps {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
   isOpen: boolean;
-}
-
-interface AgentDTO {
-  name: string;
-  profile_pic: string;
 }
 
 const CreateNewBrandProfile = ({
@@ -81,7 +76,7 @@ const CreateNewBrandProfile = ({
                 <PlusButton
                   className="h-8 w-8 rounded-full bg-transparent p-0 text-black shadow-none"
                   btnTitle={''}
-                  props={undefined}
+                  onClick={undefined}
                 />
               </div>
               <div className="w-38 flex h-28 items-center justify-center rounded-lg border border-dashed border-gray-300 bg-gray-100">
@@ -97,7 +92,7 @@ const CreateNewBrandProfile = ({
                 <PlusButton
                   className="h-8 w-8 rounded-full bg-transparent p-0 text-black shadow-none"
                   btnTitle={''}
-                  props={undefined}
+                  onClick={undefined}
                 />
               </div>
               <div className="flex h-28 w-28 items-center justify-center rounded-lg border border-dashed border-gray-300 bg-gray-100">
@@ -123,7 +118,7 @@ const CreateNewBrandProfile = ({
               />
               <textarea
                 placeholder="Description"
-                maxLength="256"
+                maxLength={256}
                 className="h-24 w-full rounded-lg border border-gray-300 bg-gray-50 p-2 focus:border-none focus:outline-none focus:ring-1 focus:ring-black"
               />
               <div className="w-1/2 pr-1">
@@ -229,7 +224,7 @@ const CreateNewBrandProfile = ({
               <PlusButton
                 className="h-8 w-8 rounded-full bg-transparent p-0 text-black shadow-none"
                 btnTitle={''}
-                props={undefined}
+                onClick={undefined}
               />
             </div>
             <div className="mb-4 rounded-lg border-4 border-dashed border-gray-300 bg-stone-50 p-4 text-center text-sm text-gray-500">
